@@ -28,8 +28,8 @@ body, html{
 width: 100%px;
 height: auto;
 position: absolute;
-top: 80px;
-right: 5px;
+top: 100px;
+right: 0px;
 }
 
 
@@ -90,6 +90,14 @@ button.cta{
 	padding: 20px 10px 20px 10px ;
 	border-radius: 10px;
 	text-decoration: none;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+a.cta:active,
+button.cta:active{
+	opacity: .7;
 }
 
 a.cta.alt
@@ -210,7 +218,8 @@ h2{
 width: 470px;
 height: 15px;
 background-color: #111111;
-margin: 110px auto ;
+margin: 200px auto ;
+bottom: 100px;
 }
 
 .nb-list{
@@ -268,6 +277,9 @@ margin: 110px auto ;
 .nb-list li.yellow{
 	background-color: yellow;
 
+
+}
+
 }
 .nb-list li.blue{background-color: blue;}
 .nb-list li.mov{background-color: violet;}
@@ -276,6 +288,7 @@ margin: 110px auto ;
 .gang-img{
 	margin: 0 auto;
 	display: block;
+
 }
 
 .footer{
@@ -288,6 +301,24 @@ margin: 110px auto ;
 }
 .footer a{
 	color:color:  rgba(0, 0, 0, .4);
+}
+
+.popup{
+	display: none;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.popup .blanket{
+	background-color: rgba(0, 0, 0, .7);
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
 }
 /*
 	<div class="separator"></div>
@@ -304,5 +335,119 @@ margin: 110px auto ;
 <h3>Music Comes In Different Forms </h3>
 <p>For this project, i m gonna present to you some of the most popular music performers</p>
 <p>Its important to start up with the best of the best so in the first instance we got some classics like Salam, Golden Kid and also the Miracle</p>
+	</div>
+*/
+
+
+.popup .content{
+	width: 960px;
+	box-sizing: border-box;
+	padding: 30px 40px;
+	height: 500px;
+	background-color: white;
+	text-align: center;
+	margin-left: -480px;
+	left: 50%;
+	top: 50%;
+margin-top: -250px;
+	position: absolute;
+}
+
+.popup h2{
+	margin: 10px 0 20px;
+}
+
+.popup.show{
+	display: block;
+}
+.popup .cta{
+	margin-top: 40px;
+}
+.popup .close{
+	width: 80px;
+	height: 80px;
+	background: #FF3300 url(img/close.png) no-repeat center center;\
+	background-size: 50%;
+	top: -40px;
+	right: -40px;
+	border-radius: 50%;
+	border: none;
+	outline: none;
+	overflow: hidden;
+	text-indent: -999px;
+	position: absolute;
+	cursor: pointer;
+}
+
+.popup .item{
+	float: left;
+	width: 415px;
+	margin-left: 40px;
+	text-align: left;
+}
+
+.popup .item .label{
+	display: block;
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+
+
+.popup .item input[type='text']{
+	display: block;
+	font-size: 30px;
+	font-weight: bold;
+	border: 4px solid #111111;
+	height: 70px;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 15px 20px;
+}
+
+
+.popup .row:after{
+	content:'';
+	display: table;
+	clear: both;
+
+
+}
+
+.popup .item:first-child{
+	margin-left: 0;
+}
+
+
+/*
+<div class="popup">
+		<div class="blanket"></div>
+		<div class="content"> 
+			<h2>Cumpara albumul preferat</h2>
+			<form action="">
+				<div class="item">
+				<label for="Numele">Nume Complet</label>
+				<input type="text" name="Awesomeface" value="STF"</div>
+				</div>
+			<form action="">
+				<div class="item">
+				<label for="Numele complet"></label>
+				<input type="text" name="Awesomeface" value="STF"</div>
+				</div>
+			<form action="">
+				<div class="item">
+				<label for="Numele complet"></label>
+				<input type="text" name="Awesomeface" value="STF"</div>
+				</div>
+			<form action="">
+				<div class="item">
+				<label for="Numele complet"></label>
+				<input type="text" name="Awesomeface" value="STF"</div>
+				</div>
+			</form>
+			<button class="cta">Cumparaaa</button>
+			<button class="close">CLOSE</button>
+		</div>
 	</div>
 */

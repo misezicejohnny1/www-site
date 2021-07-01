@@ -15,17 +15,13 @@
 				S-a intors </h1>
 			<h3>Asculta cea mai la smecherie muzica <br/> 
 				Intr o varianta inedita </h3>
-		<button class="cta alt"> Vreau sa ascult <br>
+		<button class="cta alt" onclick="showPopup();"> Vreau sa ascult <br>
 								 la smecherie </button>
-
-
-	</div>
-	<div class="florinel">
-		<img src="img/florinel.png">
 	</div>
 	
+	
 	<div class="adrian">
-		<img src="img/adrian.png">
+		<img src="img/adrian1.png">
 	</div>
 
 
@@ -34,7 +30,7 @@
 		<div>
 		<a href="33" class="logo"></a>
 		<ul>
-			<li><a href="">Join the force</a></li>
+			<li><a href="javascript:()" onclick="showPopup();">Join the force</a></li>
 			<li><a href=""> Cumparaa</a></li>
 
 		</ul>
@@ -47,7 +43,7 @@
 			<span class="highlight">Este remarcabilă capacitatea genului de a încorpora elemente din practic toate celelalte genuri muzicale</span><br>
 			accesibile culturii de masă din România  Muzica de manele, cu o istorie relativ scurtă 
 			<br>(de ordinul a câteva decenii) a devenit cu timpul un gen muzical apreciat în spațiul vorbitorilor de limbă română. </p>
-		<button class="cta">Alege albumul favorit</button>
+		<button class="cta" a href="javascript:()" onclick="showPopup();">Alege albumul favorit</button>
 	</div>
 		
 	</div>
@@ -72,47 +68,65 @@
 
 <p>For this project, i m gonna present to you some of the most popular music performers</p>
 <p>Its important to start up with the best of the best so in the first instance we got some classics like Salam, Golden Kid and also the Miracle. They become such popular celebrities because of their hard work and dedication in the manele area.The "Ratatatatatatatatatatat" of Salam is way better than the "E-OOOOOOOOOOOOO" of Freddie Mercur</p>
+<p>Ma-ntreb noaptea cum iti vine, oare cum iti vine?<br>
+Sa dormi in pat fara mine? oare ti-o fii bine?<br>
+sh-acolo pe perna mea, chiar in patul meu,<br>
+sa dormi cu altcineva sa-mi faci mie rau!<br>
+ma-ntreb noaptea cum iti vine, oare cum iti vine?<br></p>
+</div>
+<div class="centrat">
+<p>sa dormi in pat fara mine? oare ti-o fii bine?<br>
+sh-acolo pe perna mea, chiar in patul meu<br>
+sa dormi cu altcineva sa-mi faci mie rau!</p>
+</div>
 	</div>
 
 		<div class="separator">
 		
 
 	</div>
-	<img class="gang-img" src="img/giving.png" width="735" height="399" alt="giving">">
+	<img class="gang-img" src="img/salam1.png" width="735" height="399" alt="giving">
 	<footer>
 		<div class="wrapper">
 		Presenting the second project from TapTap: by <a href="https://www.instagram.com/stefantevd/"> Stefan </a>
 	</div>
-	</footer>
-
-	<div class="popup">
+</footer>
+<div class="popup" id="popup">
 		<div class="blanket"></div>
 		<div class="content"> 
 			<h2>Cumpara albumul preferat</h2>
 			<form action="">
-				<div class="item">
-				<label for="Numele">Nume Complet</label>
-				<input type="text" name="Awesomeface" value="STF"</div>
+				<div class="row">
+					<div class="item">
+					<label for="Numele">Nume </label>
+					<input type="text" name="Awesomeface" value="STF"</div>
+					</div>
+				<form action="">
+					<div class="item">
+					<label for="Prenumele">Prenume</label>
+					<input type="text" name="Awesomeface" value="STF"</div>
+					</div>
 				</div>
-			<form action="">
-				<div class="item">
-				<label for="Numele complet"></label>
-				<input type="text" name="Awesomeface" value="STF"</div>
+			<div>
+				<div class="row">
+				<form action="">
+					<div class="item">
+					<label for="Numele complet">Maneaua preferata</label>
+					<input type="text" name="Awesomeface" value="STF"</div>
+					</div>
+				<form action="">
+					<div class="item">
+					<label for="Numele complet">Albumul dorit</label>
+					<input type="text" name="Awesomeface" value="STF"</div>
+					</div>
 				</div>
-			<form action="">
-				<div class="item">
-				<label for="Numele complet"></label>
-				<input type="text" name="Awesomeface" value="STF"</div>
-				</div>
-			<form action="">
-				<div class="item">
-				<label for="Numele complet"></label>
-				<input type="text" name="Awesomeface" value="STF"</div>
-				</div>
-			</form>
-			<button class="cta">Cumparaaa</button>
-			<button class="close">CLOSE</button>
+				</form>
+				<button class="cta">Cumparaaa</button>
+				<button class="close" onclick="hidePopup();">CLOSE</button>
 		</div>
 	</div>
+
+<script src="script.js" type="text/javascript"></script>
+
 </body>
 </html>
