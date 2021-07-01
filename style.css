@@ -1,0 +1,308 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+body, html{
+	font-family: 'Open Sans', sans-serif;
+	padding: 0;
+	margin: 0;
+}
+
+.hero-banner{
+	background-color: #0054E7;
+	height: 100vh;
+	padding-left: 90px ;
+	padding-top: 10px;
+	box-sizing: border-box;
+}
+
+
+.florinel{
+    width: 200px;
+    height: auto;
+    position: absolute;
+    top: 50px;
+    right: 120px;
+}
+
+.adrian{
+width: 100%px;
+height: auto;
+position: absolute;
+top: 80px;
+right: 5px;
+}
+
+
+
+img.resize{
+	  width:200px;
+  height:40px;
+}
+}
+
+.wrapper{
+	width: 960px;
+	margin: 0 auto;
+
+}
+
+h3{
+font-size: 30px ;
+font-weight: bold;
+}
+
+.hero-banner h3{
+	color: black;
+	margin: 0 0 35px;
+
+}
+h1{
+
+font-size:  50px;
+
+}
+
+.hero-banner h1{
+	color: whitesmoke;
+	margin: 14px 0 20px;
+}
+
+h4{
+font-weight: bold;
+font-size: 20px;
+}
+
+.hero-banner h4{
+	color: black;
+	margin: 0 14px ;
+}
+
+a.cta,
+button.cta{
+	font-size: 15px;
+	font-weight: bold;
+	color: black;
+	background-color: yellow;
+	display: inline-block;
+	border: 2px solid rgba(0,127,255,.15);
+	border-color: black;
+	box-shadow: 0 0 0 10px rgba(0,127,255,.15) ;
+	padding: 20px 10px 20px 10px ;
+	border-radius: 10px;
+	text-decoration: none;
+}
+
+a.cta.alt
+button.cta.alt{
+	background-color: yellow;
+	border-color: rgba(0,0,0,.15) ;
+	box-shadow: 0 0 0 10px rgba(0,127,255,.15) 
+	color:  #111111;
+
+}
+/*
+<div class="hero-banner">
+		<div class="wrapper"></div>
+		<h4>Presenting the second project from TapTap: by <a href="https://www.instagram.com/stefantevd/"> Stefan </a></h4>
+			<h1>Pagina Number One<br/> 
+				De manele si smecherie <br/>
+				S-a intors </h1>
+			<h3>Asculta cea mai la smecherie muzica <br/> 
+				Intr o varianta inedita </h3>
+		<button class="cta alt"> Vreau sa ascult la smecherie</button>
+
+	</div>
+	<div class="character1"></div>
+	<div class="character2"></div>
+	<div class="character3"></div>
+	<div class="character4"></div>
+*/
+
+nav{
+	height: 100px;
+	background-color: white;
+	box-shadow: 0 5px 8px rgba(0, 0, 0,.2);
+	position: sticky;
+
+}
+
+nav .logo{
+	display: block;
+	    width: 310px;
+    height: 70px;
+	position: absolute; top: 50%; left:30px;
+	    margin-top: -40px;
+    margin-left: -40px;
+	background: url(img/logo2.png);
+
+}
+
+nav ul li{
+	margin: 0;
+	padding: 0;
+	display: block;
+	float: right;
+}
+
+nav ul li a{
+	display: block;
+	font-size: 30px;
+	text-decoration: solid;
+	height: 100%;
+	box-sizing: border-box;
+	text-transform: uppercase;
+	color: #111111;
+	padding: 35px 10px;
+	line-height: 30px;
+}
+/*
+<nav>
+		<a href="33" class="logo">Manele All The Way </a>
+		<ul>
+			<li><a href="">Join the force</a></li>
+			<li><a href="">Cumparaa</a></li>
+
+		</ul>
+	<div class="more info">
+		<h2>JOIN JOIN JOIN </h2>
+		<p>Blahblahblah <span class="highlight">Blahblahblah</span> Blahblahblah</p>
+		<button class="cta">Join The Force</button>
+		
+	</div>
+	</nav>
+
+*/
+
+.more-info{
+	text-align: center;
+
+}
+
+p{
+	font-weight: bold;
+	font-size: 30px;
+	margin: 30px 0;
+
+}
+
+h2{
+	font-weight: 800;
+	text-align: center;
+	font-size: 70px;
+}
+
+.more-info p{
+	margin: 18px 0 35px;
+}
+
+.more-info h2{
+	margin-top: 50px 0 0;
+}
+.highlight{
+	background-color: #FFADF9;
+	color: FF3300;
+	padding: 5px 10px;
+	line-height: 50px;
+	display: inline-block;
+}
+
+.separator{
+width: 470px;
+height: 15px;
+background-color: #111111;
+margin: 110px auto ;
+}
+
+.nb-list{
+	width: 470px;
+	padding: 20px 20px 0 20px;
+	box-sizing: border-box;
+	background-color: #EDEDED;
+	float: left;
+	margin: 0 20px 20px 0;
+	position: relative;
+}
+
+.nb-list li.iesit{
+	position: absolute;
+	width: 100%;
+	top:70px;
+	left: 20px;
+	right:20px;
+	transform: rotate(6deg);
+	box-shadow: 0 2px 14px rgba(0, 0, 0, .3);
+}
+
+.nb-list li.iesit:after{
+	content: '';
+	display: block;
+	position: absolute;
+	width: 55px;
+	height: 66px;
+	background: url(img/muie.png)no-repeat 0 0;
+	background-size: 100%;
+	bottom: -35;
+	left: 70%;
+}
+
+.nb-list li{
+	height: 70px;
+	border-radius: 10px;
+	font-size: 40px;
+	color: whitesmoke;
+	font-weight:bold;
+	display: block;
+	margin-bottom: 20px;
+	padding: 6px 20px;
+}
+.story h3{
+	font-size: 40px;
+
+}
+
+.nb-list li.green{background-color: green;}
+.nb-list li.iesit{
+	background-color: red;
+	color: #111111;
+}
+.nb-list li.yellow{
+	background-color: yellow;
+
+}
+.nb-list li.blue{background-color: blue;}
+.nb-list li.mov{background-color: violet;}
+.nb-list li.orange{background-color: orange;}
+
+.gang-img{
+	margin: 0 auto;
+	display: block;
+}
+
+.footer{
+	text-align: center\;
+	color:  rgba(0, 0, 0, .4);
+	font-size: 20px;
+	margin: 85px 0 45px;
+	font-weight: bold;
+
+}
+.footer a{
+	color:color:  rgba(0, 0, 0, .4);
+}
+/*
+	<div class="separator"></div>
+	<div class="story">
+	<ul class="nb-list">
+		<li class="Green">Vara manelelor </li>
+		<li>&nbsp;</li>
+		<li class="iesit">Iarna manelelor</li>
+		<li class="Yellow"> Toamna manelelor</li>
+		<li class="Blue"> Primavara manelelor</li>
+		<li class="mov"> Cei 3 grei pe mp3</li>
+		<li class="orange"> Baietii xxl</li>
+	</ul>
+<h3>Music Comes In Different Forms </h3>
+<p>For this project, i m gonna present to you some of the most popular music performers</p>
+<p>Its important to start up with the best of the best so in the first instance we got some classics like Salam, Golden Kid and also the Miracle</p>
+	</div>
+*/
